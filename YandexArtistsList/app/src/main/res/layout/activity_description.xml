@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alexey.yandexartistslist.DescriptionActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imBig"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/genres2"
+                android:layout_below="@+id/imBig"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/albums"
+                android:layout_below="@+id/genres2"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/biogr"
+                android:id="@+id/biography"
+                android:layout_below="@+id/albums"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:paddingRight="16dp"
+                android:paddingLeft="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/description"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/biography"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/link_inf"
+                android:id="@+id/linkInfo"
+                android:layout_below="@+id/description"
+                android:layout_marginLeft="16dp"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="invisible"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/link"
+                android:layout_below="@+id/linkInfo"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="16dp"
+                android:visibility="invisible"
+                android:textColor="@color/colorPrimary"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

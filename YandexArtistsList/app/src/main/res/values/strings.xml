@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ArtistsList</string>
+    <string name="main_label">Исполнители</string>
+    <string name="biogr">Биография</string>
+    <string name="artists_web">Web-Обозреватель артистов</string>
+    <string name="link_inf">Ссылка в интернете:</string>
+</resources>
